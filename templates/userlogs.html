@@ -1,0 +1,32 @@
+
+<html>
+  <head>    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="/static/gallery-grid.css">
+  </head>
+  <body>
+    <h1>Users</h1>
+    <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">user_id</th>
+              <th scope="col">last_ip</th>
+              <th scope="col">visit_count</th>
+              <th scope="col">user_agent</th>
+            </tr>
+          </thead>
+          <tbody>
+           {% for user in users %}
+            <tr>
+              <th scope="row">{{user.user_id}}</th>
+              <td>{{user.last_ip}}</td>
+              <td>{{user.visit_count}} </td>
+              <td>{{user.user_agent}}</td>
+            </tr>
+           {% endfor %}
+          </tbody>
+    </table>
+  </body>
+</html>

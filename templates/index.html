@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
-    <link rel="stylesheet" href="gallery-grid.css">
+    <link rel="stylesheet" href="/static/gallery-grid.css">
 
 
 </head>
@@ -28,33 +28,33 @@
         <div class="row">
             <div class="col-sm-6 col-md-4">
                 <a class="lightbox" href="../cat/cat2.jpg">
-                    <img src="../cat/cat2.jpg" alt="Cat2">
+                    <img src="{{url_for('static', filename='cat/cat2.jpg') }}" alt="Cat2">
                 </a>
             </div>
             <div class="col-sm-6 col-md-4">
                 <a class="lightbox" href="../cat/cat5.jpg">
-                    <img src="../cat/cat5.jpg" alt="Cat5">
+                    <img src="{{url_for('static', filename='cat/cat5.jpg') }}" alt="Cat5">
                 </a>
             </div>
             <div class="col-sm-12 col-md-4">
-                <a class="lightbox" href="../cat/cat4.jpg">
-                    <img src="../cat/cat4.jpg" alt="Cat4">
+                <a class="lightbox" href="">
+                    <img src="{{url_for('static', filename='cat/cat4.jpg') }}" alt="Cat4">
                 </a>
             </div>
             
             <div class="col-sm-6 col-md-4">
                 <a class="lightbox" href="../dog/white.jpg">
-                    <img src="../dog/white.jpg" alt="White">
+                    <img src="{{url_for('static', filename='dog/white.jpg') }}" alt="White">
                 </a>
             </div>
             <div class="col-sm-6 col-md-4">
                 <a class="lightbox" href="../dog/blue.jpg">
-                    <img src="../dog/blue.jpg" alt="Blue">
+                    <img src="{{url_for('static', filename='dog/blue.jpg') }}" alt="Blue">
                 </a>
             </div>
             <div class="col-sm-6 col-md-4">
-                <a class="lightbox" href="../dog/brown.jpg">
-                    <img src="../dog/brown.jpg" alt="Brown">
+                <a class="lightbox" href="">
+                    <img src="{{url_for('static', filename='dog/brown.jpg') }}" alt="Brown">
                 </a>
             </div>
         </div>
